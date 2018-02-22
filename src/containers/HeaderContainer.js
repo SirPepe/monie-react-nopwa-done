@@ -1,5 +1,5 @@
 import Header from "../components/Header";
-import { fetchRates } from "../actions/index";
+import { fetchRates } from "../actions";
 import { connect } from "react-redux";
 
 const mapDispatchToProps = (dispatch) => {

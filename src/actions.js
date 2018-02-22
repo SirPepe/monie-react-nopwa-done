@@ -1,3 +1,5 @@
+import { getRates } from "./lib/currency";
+
 export const setTravelCurrency = (code) => {
   return {
     type: "SET_TRAVEL_CURRENCY",
@@ -18,8 +20,6 @@ export const setTravelAmount = (amount) => {
     payload: Number(amount),
   };
 }
-
-import { getRates } from "../lib/currency";
 
 export const fetchRates = () => {
   return {

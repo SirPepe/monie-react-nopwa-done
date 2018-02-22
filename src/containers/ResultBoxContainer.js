@@ -1,5 +1,5 @@
 import ResultBox from "../components/ResultBox";
-import { setTravelAmount } from "../actions/index";
+import { setTravelAmount } from "../actions";
 import { connect } from "react-redux";
 
 const mapStateToProps = (state) => {

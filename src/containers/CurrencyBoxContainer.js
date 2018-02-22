@@ -1,5 +1,5 @@
 import CurrencyBox from "../components/CurrencyBox";
-import { setTravelCurrency, setHomeCurrency } from "../actions/index";
+import { setTravelCurrency, setHomeCurrency } from "../actions";
 import { connect } from "react-redux";
 
 const mapStateToProps = (state) => {

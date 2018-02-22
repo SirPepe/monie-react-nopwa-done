@@ -1,5 +1,5 @@
 import { combineReducers } from "redux";
-import { convertRelative } from "../lib/currency";
+import { convertRelative } from "./lib/currency";
 
 const travelCurrencyReducer = (state = "GBP", action) => {
   if (action.type === "SET_TRAVEL_CURRENCY") {
@@ -35,7 +35,6 @@ const initReducer = (state = false, action) => {
 
 const ratesReducer = (state = null, action) => {
   if (action.type === "FETCH_RATES" && !action.error) {
-    console.log(action.payload.rates)
     return action.payload.rates;
   } else {
     return state;
